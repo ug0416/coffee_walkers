@@ -40,11 +40,11 @@ export default ({
         required
       >
         <option disabled hidden>
-          Type of Enquiry
+        問い合わせ内容
         </option>
-        <option>Need to know more</option>
-        <option>Found a bug</option>
-        <option>Want to say hello</option>
+        <option>掲載情報の修正</option>
+        <option>不具合報告</option>
+        <option>掲載削除希望</option>
       </select>
     </label>
     <label className='Form--Label'>
@@ -62,7 +62,7 @@ export default ({
     <input
       className='Button Form--SubmitButton'
       type='submit'
-      value='Enquire'
+      value='送信'
     />
   </form>
 )
