@@ -314,7 +314,6 @@ collections: # A list of collections the CMS should be able to edit
             collection: 'postCategories'
             searchFields: ['title']
             valueField: 'title'
-      - {label: "Tags", name: "tags", widget: "list"}
       - label: 'Meta'
         required: false
         name: 'meta'
