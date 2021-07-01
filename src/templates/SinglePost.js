@@ -13,7 +13,9 @@ export const SinglePostTemplate = ({
   body,
   nextPostURL,
   prevPostURL,
-  categories = []
+  categories = [],
+  tags
+
 }) => (
   <main>
     <article
@@ -62,6 +64,21 @@ export const SinglePostTemplate = ({
           <div className="SinglePost--InnerContent">
             <Content source={body} />
           </div>
+
+          <div className="SinglePost--tag">
+          {tags && tags.length ? (
+              <div style={{ marginTop: `4rem` }}>
+                <h4>Tags</h4>
+                <ul className="taglist">
+                  {tags.map((tag) => (
+                    <li key={tag + `tag`}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+            </div>
 
           <div className="SinglePost--Pagination">
             {prevPostURL && (
