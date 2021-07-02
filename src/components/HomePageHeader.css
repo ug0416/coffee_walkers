@@ -1,0 +1,32 @@
+.HomePageHeader {
+  background-color: var(--darkGrey);
+  color: white;
+  padding: 15rem 0;
+}
+
+.HomePageHeader-large {
+  padding: 20rem 0;
+}
+
+.HomePageHeader--Title {
+  font-size: 6rem;
+  margin-bottom: 0;
+}
+
+.HomePageHeader--Subtitle {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.HomePageHeader .container {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@media (max-width: 600px) {
+  .HomePageHeader {
+    padding: 7rem 0;
+  }
+  .HomePageHeader-large {
+    padding: 12.5rem 0;
+  }
+}
