@@ -2,5 +2,5 @@
 template: BlogIndex
 title: News
 subtitle: ""
-featuredImage: https://ucarecdn.com/dc88b1ad-6dee-4337-b890-d1aded6bf465/
+featuredImage: https://ucarecdn.com/aa5a7e86-ddb6-4fd8-b70c-1a78c98c2101/
 ---
