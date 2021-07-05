@@ -105,6 +105,12 @@ blockquote {
   border-left: 2px solid var(--primary);
 }
 
+@media (max-width: 600px) {
+input {
+  touch-action: manipulation;
+  }
+}
+
 /* Utility Classes */
 .light {
   background-color: var(--lightGrey);
