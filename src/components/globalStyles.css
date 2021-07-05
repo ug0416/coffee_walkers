@@ -107,7 +107,20 @@ blockquote {
 
 @media (max-width: 600px) {
 input {
+  font-family: inherit;
+  flex-grow: 1;
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  border: 1px solid #bababa;
+  padding: 1.5rem 2rem;
+  border-radius: var(--borderRadius);
+  line-height: 1.25em;
+  transition: border-color 0.2s;
   resize: none;
+  width: 100%;
+  transition: 0.3s ease all;
+  background: transparent;
     }
 }
 
