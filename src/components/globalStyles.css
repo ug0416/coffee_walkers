@@ -235,6 +235,6 @@ blockquote {
 }
 
 /* Search */
-input[type=text] .search {
+.search {
   font-size: 16px;
 }
