@@ -14,6 +14,7 @@ export default ({ pageCount }) => {
             type="text"
             value={search.s || ''}
             placeholder="Search..."
+            className="search"
             onChange={e => {
               let search = {}
               search.s = e.target.value
