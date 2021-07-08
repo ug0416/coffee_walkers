@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import _get from 'lodash/get'
 import { Link, graphql } from 'gatsby'
 import { ChevronLeft } from 'react-feather'
+import { kebabCase } from 'lodash'
 
 import Content from '../components/Content'
 import Layout from '../components/Layout'
@@ -13,6 +14,7 @@ export const SinglePostTemplate = ({
   body,
   nextPostURL,
   prevPostURL,
+  tags,
   categories = []
 }) => (
   <main>
@@ -63,13 +65,26 @@ export const SinglePostTemplate = ({
             <Content source={body} />
           </div>
 
+            {tags && tags.length ? (
+              <div style={{ marginTop: `4rem` }}>
+                <h4>Tags</h4>
+                <ul className="taglist">
+                  {tags.map((tag) => (
+                    <li key={tag + `tag`}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+
           <div className="SinglePost--Pagination">
             {prevPostURL && (
               <Link
                 className="SinglePost--Pagination--Link prev"
                 to={prevPostURL}
               >
-                Previous Post
+                前のページへ
               </Link>
             )}
             {nextPostURL && (
@@ -77,7 +92,7 @@ export const SinglePostTemplate = ({
                 className="SinglePost--Pagination--Link next"
                 to={nextPostURL}
               >
-                Next Post
+                次のページへ
               </Link>
             )}
           </div>
@@ -123,6 +138,7 @@ export const pageQuery = graphql`
         template
         subtitle
         date(formatString: "MMMM Do, YYYY")
+        tags
         categories {
           category
         }

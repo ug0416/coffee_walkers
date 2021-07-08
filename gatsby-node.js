@@ -15,6 +15,7 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               template
               title
+              tags
             }
             fields {
               slug
@@ -48,6 +49,7 @@ exports.createPages = ({ actions, graphql }) => {
         createPage({
           // page slug set in md frontmatter
           path: page.node.fields.slug,
+          tags: page.node.frontmatter.tags,
           component: path.resolve(
             `src/templates/${String(page.node.frontmatter.template)}.js`
           ),
@@ -57,6 +59,31 @@ exports.createPages = ({ actions, graphql }) => {
           }
         })
       })
+
+        // Tag pages:
+        let tags = []
+        // Iterate through each post, putting all found tags into `tags`
+        mdFiles.forEach((edge) => {
+          if (_.get(edge, `node.frontmatter.tags`)) {
+            tags = tags.concat(edge.node.frontmatter.tags)
+          }
+        })
+        // Eliminate duplicate tags
+        tags = _.uniq(tags)
+    
+        // Make tag pages
+        tags.forEach((tag) => {
+          const tagPath = `/tags/${_.kebabCase(tag)}/`
+    
+          createPage({
+            path: tagPath,
+            component: path.resolve(`src/templates/tags.js`),
+            context: {
+              tag,
+            },
+          })
+        })
+
     })
   })
 }
