@@ -42,6 +42,6 @@ CMS.registerPreviewTemplate('blog-page', ({ entry }) => (
 CMS.registerPreviewTemplate('posts', ({ entry }) => (
   <SinglePostTemplate {...entry.toJS().data} />
 ))
-CMS.registerPreviewTemplate('tags', ({ entry }) => (
+CMS.registerPreviewTemplate('Tags-page', ({ entry }) => (
   <TagsList {...entry.toJS().data} />
 ))
