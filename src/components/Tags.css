@@ -1,0 +1,47 @@
+.Tags {
+  margin: 2rem auto 1rem;
+  max-height: 200px;
+  overflow: scroll;
+  text-align: center;
+}
+
+.Tags li {
+  display: inline-block;
+  margin: 0 .3em .3em 0;
+  padding: 0;
+}
+
+.Tags li a {
+  text-decoration: none;
+  background: white;
+  color: inherit;
+  border: 1px solid var(--lightGrey);
+  border-radius: var(--borderRadius);
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  line-height: 3rem;
+}
+
+/* TODO スマホ版のCSS、タグが多くなると見づらくなる */
+@media screen and (max-width: 500px) {
+}
+
+.Tags li span {
+  padding-left: 0.5rem;
+  color: var(--primary);
+}
+.Tags li a:hover {
+  border: 1px solid var(--primary);
+}
+.Tags li a:hover span {
+  color: #000000;
+}
+
+.Tags--Selected {
+  color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+}
