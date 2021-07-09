@@ -194,6 +194,44 @@ collections: # A list of collections the CMS should be able to edit
                   required: false,
                 }
 
+      - file: 'content/pages/tags.md'
+        label: 'Tags Page'
+        name: 'Tags-page'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: TagsList,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: 'tags' }
+          - { label: Title, name: title, widget: string }
+          - { label: Featured Images, name: featuredImage, widget: image }
+          - label: 'Meta'
+            required: false
+            name: 'meta'
+            widget: 'object'
+            fields:
+              - { label: Title, name: title, widget: string, required: false }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - {
+                  label: Canonical Link,
+                  name: canonicalLink,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Noindex,
+                  name: noindex,
+                  widget: boolean,
+                  required: false,
+                }
+
       - file: 'content/pages/home.md'
         label: 'Home Page'
         name: 'home-page'
