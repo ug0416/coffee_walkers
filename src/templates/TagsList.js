@@ -55,7 +55,7 @@ const TagsList = ({ pageContext: { tag }, data: { page, group, posts } }) => (
 export default TagsList
 
 export const pageQuery = graphql`
-    query TagsList($id: String!, $tag: String) {
+    query TagsList($id: String, $tag: String) {
         page: markdownRemark(id: { eq: $id }) {
             ...Meta
             html
