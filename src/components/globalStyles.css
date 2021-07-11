@@ -259,7 +259,7 @@ blockquote {
 #op_h dt {
   clear: left;
   float: left;
-  width: 23%;
+  width: 40%;
   padding: 0 1%;
   border-top: 1px solid var(--midGrey);
 }  
@@ -267,7 +267,7 @@ blockquote {
 #op_h dd {
   display: block;
   margin: 0 0 0 25%;
-  padding: 0 15%;
+  padding: 0 1%;
   border-top: 1px solid var(--midGrey);
 }
 #op_h dt:first-child,
