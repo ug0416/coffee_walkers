@@ -3,12 +3,12 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
-exports.createPages = ({ actions, graphql }) => {
+exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
 
-  return graphql(`
+  const result = await graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      postsRemark: allMarkdownRemark(limit: 1000) {
         edges {
           node {
             id
@@ -24,66 +24,71 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
     }
-  `).then(result => {
-    if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
+  `)
 
-    const mdFiles = result.data.allMarkdownRemark.edges
+  if (result.errors) {
+    result.errors.forEach(e => console.error(e.toString()))
+    return Promise.reject(result.errors)
+  }
 
-    const contentTypes = _.groupBy(mdFiles, 'node.fields.contentType')
+  const mdFiles = result.data.postsRemark.edges
+  const contentTypes = _.groupBy(mdFiles, 'node.fields.contentType')
+  const tags = result.data.tagsGroup.group
 
-    _.each(contentTypes, (pages, contentType) => {
-      const pagesToCreate = pages.filter(page =>
-        // get pages with template field
-        _.get(page, `node.frontmatter.template`)
-      )
-      if (!pagesToCreate.length) return console.log(`Skipping ${contentType}`)
+  let tagId;
+  // TODO DRY
+  _.each(contentTypes, (pages, contentType) => {
+    const pagesToCreate = pages.filter(page =>
+      // get pages with template field
+      _.get(page, `node.frontmatter.template`)
+    )
+    if (!pagesToCreate.length) return console.log(`Skipping ${contentType}`)
 
-      console.log(`Creating ${pagesToCreate.length} ${contentType}`)
 
-      pagesToCreate.forEach((page, index) => {
-        const id = page.node.id
-        createPage({
-          // page slug set in md frontmatter
-          path: page.node.fields.slug,
-          tags: page.node.frontmatter.tags,
-          component: path.resolve(
-            `src/templates/${String(page.node.frontmatter.template)}.js`
-          ),
-          // additional data can be passed via context
-          context: {
-            id
-          }
-        })
+    pagesToCreate.forEach((page, index) => {
+      if (page.node.frontmatter.template === 'TagsList') tagId = page.node.id
+    })
+  })
+  // Make tag pages
+  tags.forEach(tag => {
+    createPage({
+      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      component: path.resolve("src/templates/TagsList.js"),
+      context: {
+        tag: tag.fieldValue,
+        id: tagId,
+      },
+    })
+  })
+
+  _.each(contentTypes, (pages, contentType) => {
+    const pagesToCreate = pages.filter(page =>
+      // get pages with template field
+      _.get(page, `node.frontmatter.template`)
+    )
+    if (!pagesToCreate.length) return console.log(`Skipping ${contentType}`)
+
+    console.log(`Creating ${pagesToCreate.length} ${contentType}`)
+
+    pagesToCreate.forEach((page, index) => {
+      const id = page.node.id
+      createPage({
+        // page slug set in md frontmatter
+        path: page.node.fields.slug,
+        component: path.resolve(
+          `src/templates/${String(page.node.frontmatter.template)}.js`
+        ),
+        // additional data can be passed via context
+        context: {
+          id
+        }
       })
-
-        // Tag pages:
-        let tags = []
-        // Iterate through each post, putting all found tags into `tags`
-        mdFiles.forEach((edge) => {
-          if (_.get(edge, `node.frontmatter.tags`)) {
-            tags = tags.concat(edge.node.frontmatter.tags)
-          }
-        })
-        // Eliminate duplicate tags
-        tags = _.uniq(tags)
-    
-        // Make tag pages
-        tags.forEach((tag) => {
-          const tagPath = `/tags/${_.kebabCase(tag)}/`
-    
-          createPage({
-            path: tagPath,
-            component: path.resolve(`src/templates/TagsList.js`),
-            context: {
-              tag,
-            },
-          })
-        })
-
     })
   })
 }
@@ -133,14 +138,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
-
-exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
-  if (getConfig().mode === 'production') {
-    actions.setWebpackConfig({
-      devtool: false
-    });
-  }
-};
 
 // Random fix for https://github.com/gatsbyjs/gatsby/issues/5700
 module.exports.resolvableExtensions = () => ['.json']
