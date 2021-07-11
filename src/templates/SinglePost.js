@@ -2,20 +2,23 @@ import React, { Fragment } from 'react'
 import _get from 'lodash/get'
 import { Link, graphql } from 'gatsby'
 import { ChevronLeft } from 'react-feather'
-import { kebabCase } from 'lodash'
 
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import './SinglePost.css'
+import { Tags } from '../components/Tags'
+import PostSection from '../components/PostSection'
 
 export const SinglePostTemplate = ({
+  id,
   title,
+  postTags,
   date,
   body,
   nextPostURL,
   prevPostURL,
-  tags,
-  categories = []
+  categories = [],
+  relatedPosts
 }) => (
   <main>
     <article
@@ -40,7 +43,7 @@ export const SinglePostTemplate = ({
             )}
             {categories && (
               <Fragment>
-                <span>|</span>
+                <span> |</span>
                 {categories.map((cat, index) => (
                   <span
                     key={cat.category}
@@ -55,6 +58,10 @@ export const SinglePostTemplate = ({
             )}
           </div>
 
+          {postTags &&
+            <Tags tags={postTags} selectedTag={null} />
+          }
+
           {title && (
             <h1 className="SinglePost--Title" itemProp="title">
               {title}
@@ -65,26 +72,13 @@ export const SinglePostTemplate = ({
             <Content source={body} />
           </div>
 
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-
           <div className="SinglePost--Pagination">
             {prevPostURL && (
               <Link
                 className="SinglePost--Pagination--Link prev"
                 to={prevPostURL}
               >
-                前のページへ
+                前へ
               </Link>
             )}
             {nextPostURL && (
@@ -92,10 +86,20 @@ export const SinglePostTemplate = ({
                 className="SinglePost--Pagination--Link next"
                 to={nextPostURL}
               >
-                次のページへ
+                次へ
               </Link>
             )}
           </div>
+          {postTags &&
+            <Tags tags={postTags} selectedTag={null} />
+          }
+          {!!relatedPosts.length && (
+            <section className="section">
+              <div className="container">
+                <PostSection title={'おすすめのお店'} posts={relatedPosts} />
+              </div>
+            </section>
+          )}
         </div>
       </div>
     </article>
@@ -103,8 +107,22 @@ export const SinglePostTemplate = ({
 )
 
 // Export Default SinglePost for front-end
-const SinglePost = ({ data: { post, allPosts } }) => {
+const SinglePost = ({ data: { post, allPosts, group } }) => {
   const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
+  // 記事のタグをリストアップ
+  const tags = group.group.filter(tag => post.frontmatter.tags.includes(tag.fieldValue))
+
+  // 関連のある記事を取得する（タグ基準）
+  const relatedPosts =
+    [...new Set(tags.flatMap(t => allPosts.edges
+      .filter(p => p.node.id !== post.id)
+      .filter(p => p.node.frontmatter.tags.includes(t.fieldValue))
+    ))].map(post => ({
+      ...post.node,
+      ...post.node.frontmatter,
+      ...post.node.fields
+  }))
+
   return (
     <Layout
       meta={post.frontmatter.meta || false}
@@ -113,9 +131,11 @@ const SinglePost = ({ data: { post, allPosts } }) => {
       <SinglePostTemplate
         {...post}
         {...post.frontmatter}
+        postTags={tags}
         body={post.html}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}
         prevPostURL={_get(thisEdge, 'previous.fields.slug')}
+        relatedPosts={relatedPosts}
       />
     </Layout>
   )
@@ -137,38 +157,69 @@ export const pageQuery = graphql`
         title
         template
         subtitle
-        date(formatString: "MMMM Do, YYYY")
-        tags
+        date(formatString: "YYYY/MM/DD")
         categories {
           category
         }
+        tags
       }
     }
 
-    allPosts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "posts" } } }
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
-      edges {
-        node {
-          id
+    allPosts: allMarkdownRemark(filter: {fields: {contentType: {eq: "posts"}}, frontmatter: {status: {eq: "Published"}}}, 
+      sort: {order: DESC, fields: [frontmatter___date]}) {
+        edges {
+          node {
+            id
+            excerpt(truncate: true, pruneLength: 50)
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              date(formatString: "YYYY/MM/DD")
+              slug
+              categories {
+                category
+              }
+              featuredImage
+              tags
+            }
+          }
+          previous {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              date(formatString: "YYYY/MM/DD")
+              categories {
+                category
+              }
+              featuredImage
+              tags
+            }
+          }
+          next {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              date(formatString: "YYYY/MM/DD")
+              categories {
+                category
+              }
+              featuredImage
+              tags
+            }
+          }
         }
-        next {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
-        }
-        previous {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
-        }
+      }
+
+    group: allMarkdownRemark(limit: 2000) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
       }
     }
   }
