@@ -36,12 +36,21 @@
 }
 .Tags li a:hover {
   border: 1px solid var(--primary);
+  color: #fff;
+  background-color: var(--primary);
 }
 .Tags li a:hover span {
-  color: #000000;
+  color: #fff;
 }
 
 .Tags--Selected {
-  color: var(--primary) !important;
+  color: var(--lightGrey) !important;
   border: 1px solid var(--primary) !important;
+  background-color: var(--primary) !important;
+}
+
+.Tags--Selected span {
+  color: var(--lightGrey) !important;
+  border: 1px solid var(--primary) !important;
+  background-color: var(--primary) !important;
 }
