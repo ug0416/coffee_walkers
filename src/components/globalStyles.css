@@ -238,16 +238,56 @@ blockquote {
 
 #info dt {
   margin-top: 1em;
-  padding: 0 2em;
   color: #FFF;
-  text-shadow: 1px 1px rgba(0,0,0,.4);
+  text-align: center;
   background-color: var(--primary);
 }
 #info dd {
-padding: 0 1em;
   margin-left: 0;
-  font-size: .8em;
+  text-align: center;
   border-width: 0 1px 1px;
   border-style: none solid solid;
   border-color: var(--primary);
+}
+
+.open {
+	padding: 30px;
+	box-sizing: border-box;
+}
+	
+.open_inner {
+	padding: 30px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+}
+	
+.op_dl {
+  overflow: hidden;
+  font-size: 14px;
+  margin: 0;
+}
+
+.op_dt {
+	width: 10%;
+	float: left;
+	clear: left;
+	padding: 15px 20px;
+	border-bottom: 3px solid var(--primary);
+	box-sizing: border-box;
+}
+
+.op_dd {
+	width: 90%;
+	float: left;
+	margin-left: 0em;
+	padding: 15px 20px;
+	border-bottom: 3px solid var(--midGrey);
+	box-sizing: border-box;
+}
+	
+.op_dl dt.first_dt {
+  border-top: 3px solid var(--primary);
+}
+.op_dl dd.first_dd {
+  border-top: 3px solid var(--midGrey);
 }
