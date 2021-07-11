@@ -224,7 +224,7 @@ collections: # A list of collections the CMS should be able to edit
                   required: false,
                 }
 
-      - file: 'content/pages/privacy-policy.md'
+      - file: 'content/pages/privacypolicy.md'
         label: 'Privacy-Policy Page'
         name: 'privacy-policy-page'
         fields:
