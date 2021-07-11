@@ -237,7 +237,6 @@ blockquote {
 /* Infomation */
 
 #info dt {
-  margin-top: 1em;
   color: #FFF;
   text-align: center;
   background-color: var(--primary);
@@ -250,44 +249,26 @@ blockquote {
   border-color: var(--primary);
 }
 
-.open {
-	padding: 30px;
-	box-sizing: border-box;
-}
-	
-.open_inner {
-	padding: 30px;
-	box-sizing: border-box;
-	background-color: #ffffff;
-}
-	
-.op_dl {
-  overflow: hidden;
-  font-size: 14px;
-  margin: 0;
-}
+/* Open Hour */
 
-.op_dt {
-	width: 10%;
-	float: left;
-	clear: left;
-	padding: 15px 20px;
-	border-bottom: 3px solid var(--primary);
-	box-sizing: border-box;
-}
+#op_h { 
+  border-top: 1px solid var(--midGrey);
+  border-bottom: 1px solid var(--midGrey);
+  }
 
-.op_dd {
-	width: 90%;
-	float: left;
-	margin-left: 0em;
-	padding: 15px 20px;
-	border-bottom: 3px solid var(--midGrey);
-	box-sizing: border-box;
+#op_h dt {
+  clear: left;
+  float: left;
+  width: 23%;
+  padding: 0 1%;
+  border-top: 1px solid var(--midGrey);
+}  
+
+#op_h dd {
+  display: block;
+  margin: 0 0 0 25%;
+  padding: 0 15%;
+  border-top: 1px solid var(--midGrey);
 }
-	
-.op_dl dt.first_dt {
-  border-top: 3px solid var(--primary);
-}
-.op_dl dd.first_dd {
-  border-top: 3px solid var(--midGrey);
-}
+#op_h dt:first-child,
+#op_h dd:first-of-type { border-top: 0 none transparent; }

@@ -21,14 +21,14 @@ const Footer = class extends React.Component {
           <div className="has-background-black has-text-white-ter">
             <div style={{ maxWidth: '100vw' }}>
               <div className="social">
-                <a title="facebook" href="https://facebook.com">
+                <a title="facebook" href="https://www.facebook.com/CoffeeWalkers-101962781299587/">
                   <img
                     src={facebook}
                     alt="Facebook"
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
-                <a title="twitter" href="https://twitter.com">
+                <a title="twitter" href="https://twitter.com/coffee_walkers">
                   <img
                     className="fas fa-lg"
                     src={twitter}
@@ -36,7 +36,7 @@ const Footer = class extends React.Component {
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
-                <a title="instagram" href="https://instagram.com">
+                <a title="instagram" href="https://www.instagram.com/coffee_walkers/">
                   <img
                     src={instagram}
                     alt="Instagram"
