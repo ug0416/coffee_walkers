@@ -1,7 +1,7 @@
 ---
 template: BlogIndex
 title: Coffee beans
-subtitle: Coffee beans（コーヒー豆）
+subtitle: コーヒー豆
 slug: coffee-beans
 featuredImage: https://ucarecdn.com/ae1d4d40-496b-4618-9835-172b29ec5a42/
 meta:
