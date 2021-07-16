@@ -151,6 +151,7 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: 'tags' }
           - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: markdown }
           - { label: Featured Images, name: featuredImage, widget: image }
           - label: 'Meta'
             required: false
