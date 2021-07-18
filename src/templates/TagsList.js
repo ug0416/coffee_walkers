@@ -9,11 +9,13 @@ import { Tags } from '../components/Tags'
 
 // Export Template for use in CMS preview
 export const TagsListTemplate = ({
+  id,
   title,
   subtitle,
   featuredImage,
   group,
   posts,
+  tag,
   selectedTag
 }) => (
   <main className="TagsList">
