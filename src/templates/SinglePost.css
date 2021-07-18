@@ -1,9 +1,9 @@
 .SinglePost {
-  background: var(--primary);
+  background: var(--lightGrey);
 }
 
 .SinglePost--BackButton {
-  color: var(--prime);
+  color: var(--primary);
   position: relative;
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@
 }
 
 .SinglePost--Content {
-  background: white;
+  background: var(--lightGrey);
   padding: 8rem 8rem 4rem 8rem;
 }
 
