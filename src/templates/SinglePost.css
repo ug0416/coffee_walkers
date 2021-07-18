@@ -1,9 +1,9 @@
 .SinglePost {
-  background: var(--lightGrey);
+  background: var(--primary);
 }
 
 .SinglePost--BackButton {
-  color: white;
+  color: var(--prime);
   position: relative;
   display: flex;
   align-items: center;
