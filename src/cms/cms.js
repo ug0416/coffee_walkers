@@ -9,6 +9,7 @@ import { ComponentsPageTemplate } from '../templates/ComponentsPage'
 import { ContactPageTemplate } from '../templates/ContactPage'
 import { BlogIndexTemplate } from '../templates/BlogIndex'
 import { SinglePostTemplate } from '../templates/SinglePost'
+import { TagsListTemplate } from '../templates/TagsList'
 
 CMS.registerMediaLibrary(uploadcare)
 
@@ -31,6 +32,9 @@ CMS.registerPreviewTemplate('components-page', ({ entry }) => (
 ))
 CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
   <ContactPageTemplate {...entry.toJS().data} />
+))
+CMS.registerPreviewTemplate('Tags-page', ({ entry }) => (
+  <TagsListTemplate {...entry.toJS().data} />
 ))
 CMS.registerPreviewTemplate('blog-page', ({ entry }) => (
   <BlogIndexTemplate {...entry.toJS().data} />
