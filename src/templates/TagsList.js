@@ -9,13 +9,11 @@ import { Tags } from '../components/Tags'
 
 // Export Template for use in CMS preview
 export const TagsListTemplate = ({
-  id,
   title,
   subtitle,
   featuredImage,
   group,
   posts,
-  tag,
   selectedTag
 }) => (
   <main className="TagsList">
@@ -57,7 +55,7 @@ const TagsList = ({ pageContext: { tag }, data: { page, group, posts } }) => (
 export default TagsList
 
 export const pageQuery = graphql`
-    query TagsList($id: String!, $tag: String!) {
+    query TagsList($id: String!, $tag: String) {
         page: markdownRemark(id: { eq: $id }) {
             ...Meta
             html
