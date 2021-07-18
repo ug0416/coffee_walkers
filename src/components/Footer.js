@@ -1,6 +1,8 @@
 import React from 'react'
 import './Footer.css'
 
+import { Link } from 'gatsby'
+
 import footerlogo from '/static/images/footer_logo.svg'
 import facebook from '/static/images/social/facebook.svg'
 import instagram from '/static/images/social/instagram.svg'
@@ -44,6 +46,14 @@ const Footer = class extends React.Component {
                   />
                 </a>
               </div>
+              <ul className="terms">
+                <Link to="/privacy-policy/">
+                <li>プライバシーポリシー</li>
+                </Link>
+                <Link to="/law/">
+                <li>特定商取引法に基づく表示</li>  
+                </Link> 
+              </ul>
               <div className="container taCenter">
                 <span>
                 ©2020 - {new Date().getFullYear()} <a href="https://thriveweb.com.au/">COFFEE WALKERS</a>.
