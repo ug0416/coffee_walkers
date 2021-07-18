@@ -1,16 +1,11 @@
 ---
 template: DefaultPage
-slug: test slug
-title: This is a test info page
-featuredImage: >-
-  https://ucarecdn.com/0a485165-65c4-42ee-bf35-b93fbaf0fd2e/-/preview/-/rotate/270/
+slug: About Us
+title: About Us
+featuredImage: https://ucarecdn.com/50c1b0b4-6cb4-49e6-8162-59e6c1a404e9/
 meta:
-  description: test meta description
-  title: test meta title
+  description: |
+    素敵なひとときを過ごせる空間、コーヒーを提供してくれる場所を多くの人に知ってもらうため、私たちは各地のカフェを巡っています。
+  title: Coffee Walkersについて
 ---
-
-This is placeholder text that our web designers put here to make sure words appear properly on your website. This text is going to be replaced once the website is completed. You are currently reading text that is written in English, not any other language.
-
-Be careful not to waste too much time reading placeholder text! This text isn’t going to remain here because it doesn't pertain to the website. This paragraph has been copied from a program that automatically generates paragraphs like this.
-
-**It is useful for web designers to use placeholder text so they can easily see what different fonts look like on a realistic paragraph.**
+素敵なひとときを過ごせる空間、コーヒーを提供してくれる場所を多くの人に知ってもらうため、私たちは各地のカフェを巡っています。
