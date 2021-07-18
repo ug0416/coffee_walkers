@@ -7,6 +7,7 @@ import Footer from './Footer'
 
 import 'modern-normalize/modern-normalize.css'
 import './globalStyles.css'
+import IframlyComponent from './IframlyComponent'
 
 export default ({ children, meta, title }) => {
   return (
@@ -51,11 +52,15 @@ export default ({ children, meta, title }) => {
 
         return (
           <Fragment>
+            <IframlyComponent />
             <Helmet
               defaultTitle={siteTitle}
               titleTemplate={`%s | ${siteTitle}`}
             >
               {title}
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+              {/*<script data-ad-client="ca-pub-1075201051914394" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />*/}
+              <script src="https://cdn.iframe.ly/embed.js"  async />
               <link href="https://ucarecdn.com" rel="preconnect" crossorigin />
               <link rel="dns-prefetch" href="https://ucarecdn.com" />
               {/* Add font link tags here */}
@@ -71,6 +76,8 @@ export default ({ children, meta, title }) => {
               {...meta}
               {...data.settingsYaml}
             />
+
+            {/*<GithubCorner url="https://github.com/thriveweb/yellowcake" />*/}
 
             <Nav subNav={subNav} />
 
