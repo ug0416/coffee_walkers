@@ -2,7 +2,7 @@
 template: TagsList
 slug: tags
 title: Tags
-featuredImage: https://ucarecdn.com/c9ae8a62-e747-4e1f-815a-17d598299988/
+featuredImage: https://ucarecdn.com/85a28ac7-2b5c-4ecc-a979-8e1a54016835/
 subtitle: This is the tag page.
 meta:
   description: Tags
