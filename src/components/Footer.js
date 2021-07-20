@@ -56,7 +56,7 @@ const Footer = class extends React.Component {
               </ul>
               <div className="container taCenter">
                 <span>
-                ©2020 - {new Date().getFullYear()} <a href="https://thriveweb.com.au/">COFFEE WALKERS</a>.
+                ©2020 - {new Date().getFullYear()} <Link to="/">COFFEE WALKERS</Link>.
                 {' '}
                 </span>
               </div>

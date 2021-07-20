@@ -109,7 +109,7 @@ export class Navigation extends Component {
                 </div>
               </span>
             </div>
-            <NavLink to="/tags/">tags</NavLink>
+            <NavLink to="/tags/">Tags</NavLink>
             <NavLink to="/contact/">Contact</NavLink>
           </div>
           <button
