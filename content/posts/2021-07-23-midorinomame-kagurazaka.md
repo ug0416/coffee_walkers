@@ -1,6 +1,7 @@
 ---
 template: SinglePost
 title: 緑の豆 神楽坂焙煎所（ミドリノマメ カグラザカバイセンジョ）
+slug: midorinomame-kagurazaka
 status: Published
 date: 2021-07-23
 featuredImage: https://ucarecdn.com/75aaeb3e-3763-4c6c-9bd6-1b8867f6a2a7/
