@@ -109,7 +109,6 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
-          - {label: "Tags", name: "tags", widget: "list"}
           - label: 'Meta'
             required: false
             name: 'meta'
@@ -336,6 +335,7 @@ collections: # A list of collections the CMS should be able to edit
         }
       - { label: Excerpt, name: excerpt, widget: text }
       - { label: Content, name: body, widget: markdown }
+      - {label: "Tags", name: "tags", widget: "list"}
       - label: 'Categories'
         name: 'categories'
         widget: 'list'
