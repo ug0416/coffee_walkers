@@ -4,13 +4,13 @@ title: 緑の豆 神楽坂焙煎所（ミドリノマメ カグラザカバイ�
 status: Published
 date: 2021-07-23
 featuredImage: https://ucarecdn.com/75aaeb3e-3763-4c6c-9bd6-1b8867f6a2a7/
+excerpt: <--
 tags:
   - 東京都
-  - 喫茶店
+  - 神楽坂
 categories:
   - category: ToGo
   - category: Coffee beans
-excerpt: こだわりのコーヒー生豆をその場で焙煎(ロースト)
 meta:
   title: 緑の豆 神楽坂焙煎所（ミドリノマメ カグラザカバイセンジョ）
   description: |-

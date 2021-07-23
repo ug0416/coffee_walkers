@@ -1,7 +1,7 @@
 ---
 template: SinglePost
 title: ROBERT’S COFFEE 千歳烏山店（ロバーツコーヒー チトセカラスヤマテン）
-excerpt: ->
+excerpt: <--
 meta:
   title: ROBERT’S COFFEE 千歳烏山店（ロバーツコーヒー チトセカラスヤマテン）
   description: |-
@@ -17,7 +17,8 @@ date: 2021-07-23
 featuredImage: https://ucarecdn.com/b36c6089-9527-409f-8bbf-c63c40ea88b2/
 tags:
   - 東京都
-  - 喫茶店
+  - 千歳烏山
+  - カフェ
 categories:
   - category: Cafe
 ---
