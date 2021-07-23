@@ -4,6 +4,9 @@ title: Swing by coffee（スウィングバイコーヒー）
 status: Published
 date: 2021-07-23
 excerpt: <--
+tags:
+  - 東京都
+  - 喫茶店
 categories:
   - category: ToGo
   - category: Coffee beans
