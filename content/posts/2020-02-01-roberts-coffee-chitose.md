@@ -1,7 +1,17 @@
 ---
 template: SinglePost
 title: ROBERT’S COFFEE 千歳烏山店（ロバーツコーヒー チトセカラスヤマテン）
+slug: roberts-coffee-chitose
+status: Published
+date: 2021-07-23
+featuredImage: https://ucarecdn.com/b36c6089-9527-409f-8bbf-c63c40ea88b2/
 excerpt: <--
+tags:
+  - 東京都
+  - 千歳烏山
+  - カフェ
+categories:
+  - category: Cafe
 meta:
   title: ROBERT’S COFFEE 千歳烏山店（ロバーツコーヒー チトセカラスヤマテン）
   description: |-
@@ -11,16 +21,6 @@ meta:
     広々とした店内は、ワークスペースとしても利用できるだろう。
     コーヒーは北欧直輸入の焙煎豆を使用。
     浅煎りのフルーティーで飲みやすいのが特徴だ。
-slug: test2
-status: Published
-date: 2021-07-23
-featuredImage: https://ucarecdn.com/b36c6089-9527-409f-8bbf-c63c40ea88b2/
-tags:
-  - 東京都
-  - 千歳烏山
-  - カフェ
-categories:
-  - category: Cafe
 ---
 北欧フィンランドナンバーワンカフェチェーンの『ROBERT’S COFFEE（ロバーツコーヒー）』が東京に上陸。
 現在、スウェーデン・デンマーク・トルコ・エストニア・シンガポール・カタール・日本に展開中。
