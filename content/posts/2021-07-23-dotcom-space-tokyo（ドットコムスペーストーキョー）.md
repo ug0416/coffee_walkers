@@ -1,0 +1,67 @@
+---
+template: SinglePost
+title: dotcom space Tokyo（ドットコムスペーストーキョー）
+slug: dotcom-space-tokyo
+status: Published
+date: 2021-07-23
+featuredImage: https://ucarecdn.com/1ec5cc5f-a84f-4986-93d7-f3d5c509b6c5/
+excerpt: <--
+tags:
+  - 東京都
+  - 原宿
+categories:
+  - category: Cafe
+meta:
+  title: dotcom space Tokyo（ドットコムスペーストーキョー）
+  description: |-
+    中国・北京に拠点を持ち、様々な事業を展開するdotcomが、原宿の竹下通り裏手に2019年3月15日オープンしたカフェスタイルのコミュニティースペース。
+    インスタでも話題の「イチゴホイップ」が女性に人気。
+    コーヒーは苦味の少ないフルーティーで程よい酸味のテイスト。
+    店内は広々としたスペースで、テラス席も完備。
+    ドリップポットやドリッパー、Tシャツなどのオリジナル商品を販売しているので是非チェックしてほしい。
+---
+中国・北京に拠点を持ち、様々な事業を展開するdotcomが、原宿の竹下通り裏手に2019年3月15日オープンしたカフェスタイルのコミュニティースペース。\
+インスタでも話題の「イチゴホイップ」が女性に人気。\
+コーヒーは苦味の少ないフルーティーで程よい酸味のテイスト。\
+店内は広々としたスペースで、テラス席も完備。\
+ドリップポットやドリッパー、Tシャツなどのオリジナル商品を販売しているので是非チェックしてほしい。
+
+
+
+### 店舗情報
+
+<dl id="info">
+
+<dt>決済</dt>
+<dd>現金、カード可（JCB、AMEX、Diners、VISA、MASTER）
+※電子マネー可（交通電子マネー、ID、QuickPay、ApplePay）</dd>
+<dt>テーブル</dt>
+<dd>58席
+※テラス席あり</dd>
+<dt>禁煙/喫煙</dt>
+<dd>禁煙</dd>
+<dt>アクセス</dt>
+<dd>JR山手線 / 原宿駅(竹下口) 徒歩2分</dd>
+<dd>東京メトロ千代田線 / 明治神宮前駅(JR口) 徒歩4分</dd>
+<dd>東京メトロ副都心線 / 北参道駅(出入口2) 徒歩9分</dd>
+</dl>
+
+### 営業時間
+
+<dl id="op_h">
+
+<dt>MONDAY</dt>
+<dd>10:00AM – 7:00PM</dd>
+<dt>TUESDAY</dt>
+<dd>10:00AM – 7:00PM</dd>
+<dt>WEDNESDAY</dt>
+<dd>10:00AM – 7:00PM</dd>
+<dt>THURSDAY</dt>
+<dd>10:00AM – 7:00PM</dd>
+<dt>FRIDAY</dt>
+<dd>10:00AM – 7:00PM</dd>
+<dt>SATURDAY</dt>
+<dd>10:00AM – 7:00PM</dd>
+<dt>SUNDAY</dt>
+<dd>10:00AM – 7:00PM</dd>
+</dl>
