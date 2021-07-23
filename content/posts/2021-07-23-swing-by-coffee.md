@@ -1,6 +1,7 @@
 ---
 template: SinglePost
 title: Swing by coffee（スウィングバイコーヒー）
+slug: swing-by-coffee
 status: Published
 date: 2021-07-23
 featuredImage: https://ucarecdn.com/9968e567-efa7-470a-9751-3b96c03a831d/
