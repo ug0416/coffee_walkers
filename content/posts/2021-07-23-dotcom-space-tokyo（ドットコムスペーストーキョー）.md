@@ -26,8 +26,6 @@ meta:
 店内は広々としたスペースで、テラス席も完備。\
 ドリップポットやドリッパー、Tシャツなどのオリジナル商品を販売しているので是非チェックしてほしい。
 
-
-
 ### 店舗情報
 
 <dl id="info">
@@ -65,3 +63,5 @@ meta:
 <dt>SUNDAY</dt>
 <dd>10:00AM – 7:00PM</dd>
 </dl>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.833460811915!2d139.7036697!3d35.6718711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x236fe3484bc12933!2sdotcom%20space%20Tokyo!5e0!3m2!1sja!2sjp!4v1584352224822!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
