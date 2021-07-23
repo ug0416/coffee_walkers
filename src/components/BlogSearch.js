@@ -1,34 +1,42 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { navigate } from 'gatsby'
-import { Location } from '@reach/router'
-import qs from 'qs'
 
-export default ({ pageCount }) => {
+class searchBtn extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { searchWord: '' }
+  }
+
+  toggleAndSearch() {
+    const url = window.location.href
+      .replace(window.location.origin, '')
+      .split('?')[0]
+    navigate(`${url}?s=${this.state.searchWord}`)
+  }
+
+  setSearchWord(word) {
+    this.setState({
+      searchWord: word
+    })
+  }
+
+  render() {
   return (
-    <Location>
-      {({ location }) => {
-        let search = qs.parse(location.search.replace('?', ''))
-
-        return (
-          <input
+<div method="get" action="#" class="search_container">
+  <input
+            className="search-input"
             type="text"
-            value={search.s || ''}
-            placeholder="Search..."
-            className="search"
-            onChange={e => {
-              let search = {}
-              search.s = e.target.value
-              search = qs.stringify(search)
-
-              const url = location.href
-                .replace(location.origin, '')
-                .replace(location.search, '')
-
-              navigate(`${url}?${search}`)
-            }}
-          />
+            ref={(input) => { this.nameInput = input; }}
+            value={this.state.searchWord}
+            placeholder="お店を探す"
+            onChange={e => this.setSearchWord(e.target.value)}
+            onKeyDown={e => {
+              if (e.keyCode === 13) {
+                  this.toggleAndSearch()
+                  }
+              }}
+              />
+</div>
         )
       }}
-    </Location>
-  )
-}
+export default searchBtn
