@@ -11,7 +11,7 @@ tags:
   - 神楽坂
 categories:
   - category: ToGo
-  - category: Coffee beans
+  - category: Beans
 meta:
   title: 緑の豆 神楽坂焙煎所（ミドリノマメ カグラザカバイセンジョ）
   description: |-
