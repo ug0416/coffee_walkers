@@ -3,10 +3,11 @@ template: SinglePost
 title: Swing by coffee（スウィングバイコーヒー）
 status: Published
 date: 2021-07-23
+featuredImage: https://ucarecdn.com/9968e567-efa7-470a-9751-3b96c03a831d/
 excerpt: <--
 tags:
   - 東京都
-  - 喫茶店
+  - 神楽坂
 categories:
   - category: ToGo
   - category: Coffee beans
