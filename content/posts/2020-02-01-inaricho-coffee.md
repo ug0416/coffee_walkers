@@ -1,7 +1,17 @@
 ---
 template: SinglePost
 title: 自家焙煎 稲荷町珈琲（イナリチョウコーヒー）
+slug: inaricho-coffee
+status: Published
+date: 2021-07-23
+featuredImage: https://ucarecdn.com/22d32f9f-fd76-46ae-aa44-8603db366ab5/
 excerpt: ->
+tags:
+  - 東京都
+  - 喫茶店
+categories:
+  - category: ToGo
+  - category: Coffee beans
 meta:
   title: 自家焙煎 稲荷町珈琲（イナリチョウコーヒー）
   description: |-
@@ -10,16 +20,6 @@ meta:
     世界中のコーヒー豆を自家焙煎し、オリジナルブレンドまで販売している。\
     日によって使用する豆が変わる、カップコーヒーをいただくことができるのも魅力の一つだ。
   canonicalLink: inaricho-coffee
-slug: test
-status: Published
-date: 2021-07-23
-featuredImage: https://ucarecdn.com/22d32f9f-fd76-46ae-aa44-8603db366ab5/
-tags:
-  - 東京都
-  - 喫茶店
-categories:
-  - category: ToGo
-  - category: Coffee beans
 ---
 清洲橋通り沿いのマンション１階に店を構える自家焙煎のコーヒースタンド。\
 コーヒーの香りと、店主のこだわりを感じる店内はなんとも落ち着く空間だ。\
