@@ -11,7 +11,7 @@ tags:
   - 喫茶店
 categories:
   - category: ToGo
-  - category: Coffee beans
+  - category: Beans
 meta:
   title: 自家焙煎 稲荷町珈琲（イナリチョウコーヒー）
   description: |-
