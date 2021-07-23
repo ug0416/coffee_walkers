@@ -11,7 +11,7 @@ tags:
   - 神楽坂
 categories:
   - category: ToGo
-  - category: Coffee beans
+  - category: Beans
 meta:
   title: Swing by coffee（スウィングバイコーヒー）
   description: |-
