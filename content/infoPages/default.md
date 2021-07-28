@@ -2,7 +2,7 @@
 template: DefaultPage
 slug: privacy-policy
 title: プライバシーポリシー
-featuredImage: https://ucarecdn.com/7ec2ff8c-5ef7-4dd8-b551-baa44d114cc3/
+featuredImage: https://ucarecdn.com/0ae5a3ec-8c40-4a08-9118-b533f6c39f2b/
 meta:
   description: ""
   title: プライバシーポリシー
