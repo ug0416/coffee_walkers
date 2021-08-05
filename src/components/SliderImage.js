@@ -90,16 +90,32 @@ export default class SliderImage extends Component {
         <h2>Custom Paging</h2>
         <Slider {...settings}>
           <div>
-            <img src={img.image} />
+          <Image
+            resolutions="small"
+            src={image.image}
+            alt={image.alt}
+          />
           </div>
           <div>
-            <img src={img.image} />
+          <Image
+            resolutions="small"
+            src={image.image}
+            alt={image.alt}
+          />
           </div>
           <div>
-            <img src={img.image} />
+          <Image
+            resolutions="small"
+            src={image.image}
+            alt={image.alt}
+          />
           </div>
           <div>
-            <img src={img.image} />
+          <Image
+            resolutions="small"
+            src={image.image}
+            alt={image.alt}
+          />
           </div>
         </Slider>
       </div>
