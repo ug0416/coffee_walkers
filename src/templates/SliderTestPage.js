@@ -10,7 +10,7 @@ import SliderImage from '../components/SliderImage'
 import Popup from '../components/Popup'
 
 // Export Template for use in CMS preview
-export const ComponentsPageTemplate = ({
+export const SliderTestPageTemplate = ({
   title,
   subtitle,
   featuredImage,
@@ -70,7 +70,7 @@ export const ComponentsPageTemplate = ({
   </main>
 )
 
-const ComponentsPage = ({ data: { page } }) => (
+const SliderTestPage = ({ data: { page } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
@@ -79,10 +79,10 @@ const ComponentsPage = ({ data: { page } }) => (
   </Layout>
 )
 
-export default ComponentsPage
+export default SliderTestPage
 
 export const pageQuery = graphql`
-  query ComponentsPage($id: String!) {
+  query SliderTestPage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       ...Slide
