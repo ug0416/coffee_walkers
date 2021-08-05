@@ -45,37 +45,25 @@ export default class SliderImage extends Component {
         }
       )
 
-  componentDidMount() {
-    const { images } = this.props,
-      maxCount = images.length
-      let loopCount = 1
-    
-      for (let i in images) {
-        if (this.getImageInfo(images[i], i)) {
-          this.setState({ loaded: loopCount === maxCount })
-          loopCount++
-        }
-      }
-    }
-
   render() {
     const { images } = this.props
     const settings = {
       customPaging: function(i) {
         return (
+          <Fragment>
           <a>
             <div className="Gallery">
             {images.map((image, index) => (
                 <div>
                   <Image
-                    resolutions="small"
-                    src={`${image.image}${i + 1}`}
+                    src={`${image}${i + 1}`}
                     alt={image.alt}
                   />
                 </div>
             ))}
           </div>
           </a>
+          </Fragment>
         );
       },
       dots: true,
@@ -92,29 +80,29 @@ export default class SliderImage extends Component {
           <div>
           <Image
             resolutions="small"
-            src={`${image.image}`}
-            alt={image.alt}
+            src={images.image}
+            alt={images.alt}
           />
           </div>
           <div>
           <Image
             resolutions="small"
-            src={`${image.image}`}
-            alt={image.alt}
+            src={images.image}
+            alt={images.alt}
           />
           </div>
           <div>
           <Image
             resolutions="small"
-            src={`${image.image}`}
-            alt={image.alt}
+            src={images.image}
+            alt={images.alt}
           />
           </div>
           <div>
           <Image
             resolutions="small"
-            src={`${image.image}`}
-            alt={image.alt}
+            src={images.image}
+            alt={images.alt}
           />
           </div>
         </Slider>
