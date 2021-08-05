@@ -5,9 +5,9 @@ import Slider from 'react-slick';
 import Image from './Image'
 
 export const query = graphql`
-  fragment Gallery on MarkdownRemark {
+  fragment Slide on MarkdownRemark {
     frontmatter {
-      gallery {
+      slide {
         alt
         image
         title
