@@ -85,7 +85,7 @@ export const pageQuery = graphql`
   query ComponentsPage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
-      ...SliderImage
+      ...Slide
       html
       frontmatter {
         title
