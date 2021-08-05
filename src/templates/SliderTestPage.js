@@ -75,7 +75,7 @@ const SliderTestPage = ({ data: { page } }) => (
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
-    <ComponentsPageTemplate {...page} {...page.frontmatter} body={page.html} />
+    <SliderTestPageTemplate {...page} {...page.frontmatter} body={page.html} />
   </Layout>
 )
 
