@@ -92,28 +92,28 @@ export default class SliderImage extends Component {
           <div>
           <Image
             resolutions="small"
-            src={image.image}
+            src={`${image.image}`}
             alt={image.alt}
           />
           </div>
           <div>
           <Image
             resolutions="small"
-            src={image.image}
+            src={`${image.image}`}
             alt={image.alt}
           />
           </div>
           <div>
           <Image
             resolutions="small"
-            src={image.image}
+            src={`${image.image}`}
             alt={image.alt}
           />
           </div>
           <div>
           <Image
             resolutions="small"
-            src={image.image}
+            src={`${image.image}`}
             alt={image.alt}
           />
           </div>
