@@ -7,7 +7,7 @@ import Image from './Image'
 export const query = graphql`
   fragment SliderImage on MarkdownRemark {
     frontmatter {
-      gallery {
+      slide {
         alt
         image
         title

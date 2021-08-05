@@ -21,7 +21,7 @@ export const ComponentsPageTemplate = ({
   videoTitle,
   accordion,
   body,
-  gallery
+  slide
 }) => (
   <main>
     <PageHeader
@@ -38,7 +38,7 @@ export const ComponentsPageTemplate = ({
     <section className="section">
       <div className="container">
         <h2>Our gallery component</h2>
-        <SliderImage images={gallery} />
+        <SliderImage images={slide} />
       </div>
     </section>
 
