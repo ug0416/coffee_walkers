@@ -16,7 +16,7 @@ export const query = graphql`
         alt
         image
         title
-      }
+      }z
     }
   }
 `

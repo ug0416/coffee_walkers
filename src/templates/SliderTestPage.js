@@ -21,7 +21,7 @@ export const ComponentsPageTemplate = ({
   videoTitle,
   accordion,
   body,
-  slide
+  gallery
 }) => (
   <main>
     <PageHeader
@@ -38,7 +38,7 @@ export const ComponentsPageTemplate = ({
     <section className="section">
       <div className="container">
         <h2>Our gallery component</h2>
-        <SliderImage images={slide} />
+        <SliderImage images={gallery} />
       </div>
     </section>
 
@@ -85,7 +85,7 @@ export const pageQuery = graphql`
   query ComponentsPage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
-      ...Slide
+      ...Gallery
       html
       frontmatter {
         title
