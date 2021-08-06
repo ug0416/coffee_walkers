@@ -349,8 +349,8 @@ collections: # A list of collections the CMS should be able to edit
             collection: 'postCategories'
             searchFields: ['title']
             valueField: 'title'
-      - label: 'Slider'
-        name: 'slider'
+      - label: 'Gallery'
+        name: 'gallery'
         widget: 'list'
         fields:
           - { name: image, label: Image, widget: image }
