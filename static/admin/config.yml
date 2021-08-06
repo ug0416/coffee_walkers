@@ -133,6 +133,7 @@ collections: # A list of collections the CMS should be able to edit
                   widget: boolean,
                   required: false,
                 }
+
       - file: 'content/pages/components.md'
         label: 'Components Page'
         name: 'components-page'
@@ -348,6 +349,13 @@ collections: # A list of collections the CMS should be able to edit
             collection: 'postCategories'
             searchFields: ['title']
             valueField: 'title'
+      - label: 'Slider'
+        name: 'slider'
+        widget: 'list'
+        fields:
+          - { name: image, label: Image, widget: image }
+          - { name: alt, label: Alt, widget: string }
+          - { name: title, label: Title, widget: string, required: false }
       - label: 'Meta'
         required: false
         name: 'meta'
