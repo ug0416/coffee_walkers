@@ -12,11 +12,7 @@ tags:
 categories:
   - category: ToGo
   - category: Beans
-gallery:
-  - image: https://ucarecdn.com/5c3caf68-5f0b-4170-8ecc-4e144894d440/
-    alt: test1
-  - image: https://ucarecdn.com/c3be5716-51a3-4013-8841-b6e9b5cb62d8/
-    alt: test2
+gallery: []
 meta:
   title: 自家焙煎 稲荷町珈琲（イナリチョウコーヒー）
   description: |-
@@ -36,8 +32,6 @@ Coffee Walkerには嬉しい、リーズナブルな価格でコーヒーをい�
 まさにコスパ最強である。\
 上野、浅草周辺の下町を散策する際には是非とも立ち寄りたいコーヒースタンドだ。
 
-
-
 ### 店舗情報
 
 <dl id="info">
@@ -52,8 +46,6 @@ Coffee Walkerには嬉しい、リーズナブルな価格でコーヒーをい�
 <dd>つくばエクスプレス ／ 新御徒町駅 徒歩8分</dd>
 <dd>JR山手線 ／ 上野駅 徒歩8分</dd>
 </dl>
-
-
 
 ### 営業時間
 
@@ -78,8 +70,8 @@ Coffee Walkerには嬉しい、リーズナブルな価格でコーヒーをい�
 
 </dl>
 
-
-
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12958.302860801725!2d139.7828856!3d35.7120572!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x536a146dbfe01d1b!2z6Ieq5a6254SZ54WOIOeou-iNt-eUuuePiOeQsg!5e0!3m2!1sja!2sjp!4v1595865209671!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-![]()
+![](https://ucarecdn.com/3801e045-20cd-4222-bcf0-a091a1b75bd7/)
+
+![](https://ucarecdn.com/b3d9e8ac-05f6-4ab1-9ab1-9064c445eb6a/)
