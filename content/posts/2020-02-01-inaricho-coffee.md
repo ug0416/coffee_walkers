@@ -12,7 +12,11 @@ tags:
 categories:
   - category: ToGo
   - category: Beans
-gallery: []
+gallery:
+  - image: https://ucarecdn.com/7400f7f5-9fdc-490a-b126-3d8a006c1e04/
+    alt: test1
+  - image: https://ucarecdn.com/05103d16-4ca9-4fcb-b7ea-6cff2a00cd05/
+    alt: test2
 meta:
   title: 自家焙煎 稲荷町珈琲（イナリチョウコーヒー）
   description: |-
