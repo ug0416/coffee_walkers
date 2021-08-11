@@ -5,6 +5,7 @@ import { ChevronLeft } from 'react-feather'
 
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import Gallery from '../components/Gallery'
 import './SinglePost.css'
 import { Tags } from '../components/Tags'
 import PostSection from '../components/PostSection'
@@ -18,7 +19,8 @@ export const SinglePostTemplate = ({
   nextPostURL,
   prevPostURL,
   categories = [],
-  relatedPosts
+  relatedPosts,
+  gallery
 }) => (
   <main>
     <article
@@ -67,6 +69,13 @@ export const SinglePostTemplate = ({
               {title}
             </h1>
           )}
+
+          <section className="section">
+            <div className="container">
+            <Gallery images={gallery} />
+            </div>
+          </section>
+
 
           <div className="SinglePost--InnerContent">
             <Content source={body} />
@@ -151,6 +160,7 @@ export const pageQuery = graphql`
   query SinglePost($id: String!) {
     post: markdownRemark(id: { eq: $id }) {
       ...Meta
+      ...Gallery
       html
       id
       frontmatter {
@@ -158,6 +168,7 @@ export const pageQuery = graphql`
         template
         subtitle
         date(formatString: "YYYY/MM/DD")
+        featuredImage
         categories {
           category
         }

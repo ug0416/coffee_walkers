@@ -6,7 +6,6 @@ import Content from '../components/Content.js'
 import Layout from '../components/Layout.js'
 import Accordion from '../components/Accordion'
 import BackgroundVideo from '../components/BackgroundVideo'
-import Gallery from '../components/Gallery'
 import Popup from '../components/Popup'
 
 // Export Template for use in CMS preview
@@ -20,8 +19,7 @@ export const ComponentsPageTemplate = ({
   videoPoster,
   videoTitle,
   accordion,
-  body,
-  gallery
+  body
 }) => (
   <main>
     <PageHeader
@@ -32,13 +30,6 @@ export const ComponentsPageTemplate = ({
     <section className="section">
       <div className="container">
         <Content source={section1} />
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <h2>Our gallery component</h2>
-        <Gallery images={gallery} />
       </div>
     </section>
 
@@ -85,7 +76,6 @@ export const pageQuery = graphql`
   query ComponentsPage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
-      ...Gallery
       html
       frontmatter {
         title
