@@ -95,9 +95,9 @@ collections: # A list of collections the CMS should be able to edit
                   widget: boolean,
                   required: false,
                 }
-      - file: 'content/pages/blog.md'
-        label: 'Blog Page'
-        name: 'blog-page'
+      - file: 'content/pages/shop.md'
+        label: 'Shop Page'
+        name: 'shop-page'
         fields:
           - {
               label: Template,
