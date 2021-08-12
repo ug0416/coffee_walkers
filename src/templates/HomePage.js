@@ -39,6 +39,8 @@ export const HomePageTemplate = ({
   title,
   subtitle,
   featuredImage,
+  meta,
+  tags,
   posts = [],
   postCategories = [],
   enableSearch = true,
@@ -48,7 +50,7 @@ export const HomePageTemplate = ({
     {({ location }) => {
       let filteredPosts =
         posts && !!posts.length
-          ? byCategory(byDate(posts), title, contentType)
+          ? byCategory(byDate(posts), title, meta, tags, contentType)
           : []
 
       let queryObj = location.search.replace('?', '')
@@ -57,7 +59,9 @@ export const HomePageTemplate = ({
       if (enableSearch && queryObj.s) {
         const searchTerm = queryObj.s.toLowerCase()
         filteredPosts = filteredPosts.filter(post =>
-          post.frontmatter.title.toLowerCase().includes(searchTerm)
+          post.frontmatter.title.toLowerCase().includes(searchTerm) ||
+          post.frontmatter.meta.description.toLowerCase().includes(searchTerm) ||
+          post.frontmatter.tags.join(" ").toLowerCase().includes(searchTerm)
         )
       }
 
@@ -150,10 +154,14 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date
+            meta {
+              description
+            }
             categories {
               category
             }
             featuredImage
+            tags
           }
         }
       }

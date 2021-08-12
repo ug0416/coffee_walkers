@@ -40,6 +40,7 @@ export const BlogIndexTemplate = ({
   subtitle,
   featuredImage,
   meta,
+  tags,
   posts = [],
   postCategories = [],
   enableSearch = true,
@@ -49,7 +50,7 @@ export const BlogIndexTemplate = ({
     {({ location }) => {
       let filteredPosts =
         posts && !!posts.length
-          ? byCategory(byDate(posts), title, meta, contentType)
+          ? byCategory(byDate(posts), title, meta, tags, contentType)
           : []
 
       let queryObj = location.search.replace('?', '')
@@ -59,7 +60,8 @@ export const BlogIndexTemplate = ({
         const searchTerm = queryObj.s.toLowerCase()
         filteredPosts = filteredPosts.filter(post =>
           post.frontmatter.title.toLowerCase().includes(searchTerm) ||
-          post.frontmatter.meta.description.toLowerCase().includes(searchTerm)
+          post.frontmatter.meta.description.toLowerCase().includes(searchTerm) ||
+          post.frontmatter.tags.join(" ").toLowerCase().includes(searchTerm)
         )
       }
 
@@ -158,6 +160,7 @@ export const pageQuery = graphql`
               category
             }
             featuredImage
+            tags
           }
         }
       }
