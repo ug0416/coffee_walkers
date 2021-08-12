@@ -4,7 +4,7 @@ title: Swing by coffee（スウィングバイコーヒー）
 slug: swing-by-coffee
 status: Published
 date: 2021-07-23
-featuredImage: https://ucarecdn.com/9968e567-efa7-470a-9751-3b96c03a831d/
+featuredImage: https://ucarecdn.com/8d2217df-085a-4a24-a9d8-c264f0f19c9d/
 excerpt: <--
 tags:
   - 東京都
@@ -12,6 +12,11 @@ tags:
 categories:
   - category: ToGo
   - category: Beans
+gallery:
+  - image: https://ucarecdn.com/fff7b865-73dd-4e15-b344-67bb93558131/
+    alt: swing-by-coffee_shop
+  - image: https://ucarecdn.com/17266b4b-2e64-4e3c-ad6d-2e8140c178dc/
+    alt: swing-by-coffee_coffee
 meta:
   title: Swing by coffee（スウィングバイコーヒー）
   description: |-
