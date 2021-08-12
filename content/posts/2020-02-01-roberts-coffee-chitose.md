@@ -4,14 +4,20 @@ title: ROBERT’S COFFEE 千歳烏山店（ロバーツコーヒー チトセカ
 slug: roberts-coffee-chitose
 status: Published
 date: 2021-07-23
-featuredImage: https://ucarecdn.com/b36c6089-9527-409f-8bbf-c63c40ea88b2/
+featuredImage: https://ucarecdn.com/c14a54e3-fb20-4bc1-a357-1978f8b98993/
 excerpt: <--
 tags:
   - 東京都
   - 千歳烏山
-  - カフェ
 categories:
   - category: Cafe
+gallery:
+  - image: https://ucarecdn.com/096afc4d-f966-46f9-b402-83063cb7c775/
+    alt: roberts-coffee-chitose_shop
+  - image: https://ucarecdn.com/1579ea2a-1bb1-4c4b-a003-815b70479f65/
+    alt: roberts-coffee-chitose_introspection
+  - image: https://ucarecdn.com/9ecf3b1b-15b0-4f7c-a26b-d1a4881dc06c/
+    alt: roberts-coffee-chitose_coffee
 meta:
   title: ROBERT’S COFFEE 千歳烏山店（ロバーツコーヒー チトセカラスヤマテン）
   description: |-
@@ -65,8 +71,4 @@ meta:
 
 </dl>
 
-
-
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12965.396450521514!2d139.6001116!3d35.6684049!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x832d9da58da81a1e!2z44Ot44OQ44O844OE44Kz44O844OS44O85Y2D5q2z54OP5bGx5bqX!5e0!3m2!1sja!2sjp!4v1584416546171!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-![]()
