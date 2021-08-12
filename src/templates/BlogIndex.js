@@ -39,6 +39,7 @@ export const BlogIndexTemplate = ({
   title,
   subtitle,
   featuredImage,
+  meta,
   posts = [],
   postCategories = [],
   enableSearch = true,
@@ -48,7 +49,7 @@ export const BlogIndexTemplate = ({
     {({ location }) => {
       let filteredPosts =
         posts && !!posts.length
-          ? byCategory(byDate(posts), title, contentType)
+          ? byCategory(byDate(posts), title, meta, contentType)
           : []
 
       let queryObj = location.search.replace('?', '')
@@ -57,7 +58,8 @@ export const BlogIndexTemplate = ({
       if (enableSearch && queryObj.s) {
         const searchTerm = queryObj.s.toLowerCase()
         filteredPosts = filteredPosts.filter(post =>
-          post.frontmatter.title.toLowerCase().includes(searchTerm)
+          post.frontmatter.title.toLowerCase().includes(searchTerm) ||
+          post.frontmatter.meta.description.toLowerCase().includes(searchTerm)
         )
       }
 
@@ -149,6 +151,9 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date
+            meta {
+              description
+            }
             categories {
               category
             }
