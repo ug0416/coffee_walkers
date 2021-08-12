@@ -4,7 +4,7 @@ title: 緑の豆 神楽坂焙煎所（ミドリノマメ カグラザカバイ�
 slug: midorinomame-kagurazaka
 status: Published
 date: 2021-07-23
-featuredImage: https://ucarecdn.com/75aaeb3e-3763-4c6c-9bd6-1b8867f6a2a7/
+featuredImage: https://ucarecdn.com/6e7f6f77-ab23-4c53-9653-1b27ad38e6c0/
 excerpt: <--
 tags:
   - 東京都
@@ -12,6 +12,13 @@ tags:
 categories:
   - category: ToGo
   - category: Beans
+gallery:
+  - image: https://ucarecdn.com/d1fe49ac-f018-42d6-80f6-5ccb76ef3558/
+    alt: midorinomame-kagurazaka_shop
+  - image: https://ucarecdn.com/4d4944b6-e4bf-4aae-bf9f-c0a381adb4f7/
+    alt: midorinomame-kagurazaka_introspection
+  - image: https://ucarecdn.com/89879a5a-ca0e-4d10-9762-65a11e28c154/
+    alt: midorinomame-kagurazaka_coffee-bean
 meta:
   title: 緑の豆 神楽坂焙煎所（ミドリノマメ カグラザカバイセンジョ）
   description: |-
