@@ -15,9 +15,9 @@ categories:
   - category: Beans
 gallery:
   - image: https://ucarecdn.com/43151090-ebbf-49b6-8b0e-8214057cb24b/
-    alt: inaricho-coffee_shop-image
+    alt: inaricho-coffee_shop
   - image: https://ucarecdn.com/bf9f29f1-db48-48ad-b0f0-81be4e3e0df1/
-    alt: inaricho-coffee_coffee-image
+    alt: inaricho-coffee_coffee
 meta:
   title: 自家焙煎 稲荷町珈琲（イナリチョウコーヒー）
   description: |-
