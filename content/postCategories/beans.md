@@ -3,7 +3,7 @@ template: BlogIndex
 title: Beans
 subtitle: コーヒー豆
 slug: coffee-beans
-featuredImage: https://ucarecdn.com/ae1d4d40-496b-4618-9835-172b29ec5a42/
+featuredImage: https://ucarecdn.com/28d6fdbd-e72a-4500-bcbe-d04bcccfae42/
 meta:
   title: Coffee beans（コーヒー豆）
   description: コーヒー豆が購入できます。

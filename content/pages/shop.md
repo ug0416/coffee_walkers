@@ -1,10 +1,10 @@
 ---
 template: BlogIndex
 slug: shop
-title: Blog Page
-featuredImage: https://ucarecdn.com/c7b7f57e-7a68-4d5e-8e54-0125e0801895/
-subtitle: This is the blog page subtitle.
+title: Shop
+featuredImage: https://ucarecdn.com/72c09a5b-6c29-4255-98e1-b415c7d14d44/
+subtitle: ショップ一覧
 meta:
-  description: This is a meta description.
-  title: Blog Page
+  description: ショップ一覧
+  title: Shop
 ---

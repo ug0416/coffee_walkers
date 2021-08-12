@@ -2,7 +2,7 @@
 template: ContactPage
 slug: contact
 title: Contact Form
-featuredImage: https://ucarecdn.com/cad66877-1a5b-4b5a-8071-e1b4df2fb8c9/
+featuredImage: https://ucarecdn.com/3d0f081a-7ded-4d16-84a3-bc4e48e1eea6/
 subtitle: 情報修正、掲載削除、その他問い合わせ
 address: Tokyo
 phone: ""

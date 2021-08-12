@@ -2,8 +2,8 @@
 template: TagsList
 slug: tags
 title: Tags
-featuredImage: https://ucarecdn.com/11097260-cffc-454b-bb45-9f099b507931/
-subtitle: This is the tag page.
+featuredImage: https://ucarecdn.com/5346c310-b471-439b-a53b-27169babf559/
+subtitle: タグ一覧
 meta:
   description: Tags
   title: タグ一覧
