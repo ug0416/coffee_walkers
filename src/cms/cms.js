@@ -36,7 +36,7 @@ CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
 CMS.registerPreviewTemplate('Tags-page', ({ entry }) => (
   <TagsListTemplate {...entry.toJS().data} />
 ))
-CMS.registerPreviewTemplate('blog-page', ({ entry }) => (
+CMS.registerPreviewTemplate('shop-page', ({ entry }) => (
   <BlogIndexTemplate {...entry.toJS().data} />
 ))
 CMS.registerPreviewTemplate('posts', ({ entry }) => {
