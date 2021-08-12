@@ -4,19 +4,20 @@ title: 自家焙煎 稲荷町珈琲（イナリチョウコーヒー）
 slug: inaricho-coffee
 status: Published
 date: 2021-07-23
-featuredImage: https://ucarecdn.com/22d32f9f-fd76-46ae-aa44-8603db366ab5/
+featuredImage: https://ucarecdn.com/e9da8bf9-b465-4d88-b3ba-6d5972a12d5d/
 excerpt: ->
 tags:
   - 東京都
-  - 喫茶店
+  - 上野
+  - 浅草
 categories:
   - category: ToGo
   - category: Beans
 gallery:
-  - image: https://ucarecdn.com/7400f7f5-9fdc-490a-b126-3d8a006c1e04/
-    alt: test1
-  - image: https://ucarecdn.com/05103d16-4ca9-4fcb-b7ea-6cff2a00cd05/
-    alt: test2
+  - image: https://ucarecdn.com/43151090-ebbf-49b6-8b0e-8214057cb24b/
+    alt: inaricho-coffee_shop-image
+  - image: https://ucarecdn.com/bf9f29f1-db48-48ad-b0f0-81be4e3e0df1/
+    alt: inaricho-coffee_coffee-image
 meta:
   title: 自家焙煎 稲荷町珈琲（イナリチョウコーヒー）
   description: |-
