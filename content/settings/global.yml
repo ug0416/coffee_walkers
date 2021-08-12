@@ -1,8 +1,7 @@
-siteTitle: Yellow Cake
-siteUrl: 'https://yellowcake.netlify.com'
+siteTitle: Coffee Walkers
+siteUrl: 'https://coffeewalkers.com/'
 siteDescription: >-
-  A starter project for creating lightning-fast websites with Gatsby v2 Netlify
-  CMS v2 and Uploadcare media library.
+  Coffee Walkersは、最高のコーヒーを探すためのコーヒーマップです。
 socialMediaCard:
-  image: 'https://ucarecdn.com/fcc8d148-a9a8-42ee-a793-0f12b1437f61/'
-googleTrackingId: 'UA-133175780-1'
+  image: 'https://ucarecdn.com/7dc9037c-16ca-454e-b7db-098b4450eee5/'
+googleTrackingId: 'UA-155410525-1'
