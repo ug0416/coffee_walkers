@@ -5,7 +5,7 @@ slug: inaricho-coffee
 status: Published
 date: 2021-07-23
 featuredImage: https://ucarecdn.com/e9da8bf9-b465-4d88-b3ba-6d5972a12d5d/
-excerpt: ->
+excerpt: <--
 tags:
   - 東京都
   - 上野
@@ -25,7 +25,7 @@ meta:
     コーヒーの香りと、店主のこだわりを感じる店内はなんとも落ち着く空間だ。
     世界中のコーヒー豆を自家焙煎し、オリジナルブレンドまで販売している。
     日によって使用する豆が変わる、カップコーヒーをいただくことができるのも魅力の一つだ。
-  canonicalLink: inaricho-coffee
+  canonicalLink: ""
 ---
 清洲橋通り沿いのマンション１階に店を構える自家焙煎のコーヒースタンド。
 コーヒーの香りと、店主のこだわりを感じる店内はなんとも落ち着く空間だ。
