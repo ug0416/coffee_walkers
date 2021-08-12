@@ -4,13 +4,20 @@ title: dotcom space Tokyo（ドットコムスペーストーキョー）
 slug: dotcom-space-tokyo
 status: Published
 date: 2021-07-23
-featuredImage: https://ucarecdn.com/1ec5cc5f-a84f-4986-93d7-f3d5c509b6c5/
+featuredImage: https://ucarecdn.com/8875094e-facd-4067-a1b6-9d770892be2f/
 excerpt: <--
 tags:
   - 東京都
   - 原宿
 categories:
   - category: Cafe
+gallery:
+  - image: https://ucarecdn.com/a9127cd7-7b1e-461a-a4cc-452a425cc8a7/
+    alt: dotcom-space-tokyo_entrance
+  - image: https://ucarecdn.com/be2b0597-6eb7-43fd-97ce-126f7511b719/
+    alt: dotcom-space-tokyo_shop
+  - image: https://ucarecdn.com/31ca94e8-1e2e-41be-a5a5-e71c81734631/
+    alt: dotcom-space-tokyo_coffee
 meta:
   title: dotcom space Tokyo（ドットコムスペーストーキョー）
   description: |-
