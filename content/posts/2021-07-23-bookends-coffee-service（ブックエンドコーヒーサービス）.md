@@ -12,6 +12,11 @@ tags:
 categories:
   - category: ToGo
   - category: Beans
+gallery:
+  - image: https://ucarecdn.com/decd81bb-1a82-4b39-ac39-b14c5f6bfaac/
+    alt: bookends-coffee-service_shop
+  - image: https://ucarecdn.com/56ab0a97-79d5-4aa3-af03-e1730a5ecb2b/
+    alt: bookends-coffee-service_coffee
 meta:
   title: Bookends Coffee Service（ブックエンドコーヒーサービス）
   description: |-
