@@ -4,7 +4,7 @@ title: Bookends Coffee Service（ブックエンドコーヒーサービス）
 slug: bookends-coffee-service
 status: Published
 date: 2021-07-23
-featuredImage: https://ucarecdn.com/1c73b038-a66e-4a2f-925c-0a8cbcf541ea/
+featuredImage: https://ucarecdn.com/7f9d425c-c385-4e9c-a694-2230adccc267/
 excerpt: <--
 tags:
   - 東京都
