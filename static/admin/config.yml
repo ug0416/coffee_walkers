@@ -10,7 +10,7 @@ media_library:
     multiple: false
     tabs: 'file camera url facebook gdrive'
     effects: 'crop,rotate,enhance,grayscale'
-    imageShrink: '2000x2000'
+    imageShrink: '1200x1200'
     previewStep: true
     clearable: true
 collections: # A list of collections the CMS should be able to edit
