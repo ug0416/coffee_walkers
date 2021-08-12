@@ -1,9 +1,10 @@
 ---
 template: SinglePost
 title: Beasty Coffee cafe laboratory（ビースティー コーヒー カフェ ラボラトリー）
+slug: beasty-coffee-cafe-laboratory
 status: Published
 date: 2021-07-23
-featuredImage: https://ucarecdn.com/442fbeb8-2c37-45b5-ba3a-764ab33baf85/
+featuredImage: https://ucarecdn.com/3b50715a-2d5e-4612-8ee1-367b10c2f7e6/
 excerpt: <--
 tags:
   - 東京都
@@ -11,24 +12,26 @@ tags:
 categories:
   - category: Cafe
   - category: Work
+gallery:
+  - image: https://ucarecdn.com/26751b06-05c1-4026-a5f4-b26653699de7/
+    alt: beasty-coffee-cafe-laboratory_shop
+    title: ""
+  - image: https://ucarecdn.com/4563722c-745b-406e-aa76-28404760f1ee/
+    alt: beasty-coffee-cafe-laboratory_coffee
+  - image: https://ucarecdn.com/24bf93a7-3a73-4e60-9e32-ad2422076284/
+    alt: beasty-coffee-cafe-laboratory_ice-latte
 meta:
   title: Beasty Coffee cafe laboratory（ビースティー コーヒー カフェ ラボラトリー）
   description: |-
     渋谷駅から少し離れた「奥渋エリア」に位置する瓦屋根が特徴的なカフェ。
-    プロが使用するコーヒー器具や豆を提供する「Beasty Coffee by amadana」の
-    コーヒーを実際に味わうことができる。
-    和の雰囲気が感じられる落ち着いた店内では、Wi-Fi、充電設備を完備しており、
-    ワークスペースとしての利用も可能。
+    プロが使用するコーヒー器具や豆を提供する「Beasty Coffee by amadana」のコーヒーを実際に味わうことができる。
+    和の雰囲気が感じられる落ち着いた店内では、Wi-Fi、充電設備を完備しており、ワークスペースとしての利用も可能。
     代々木公園からも近いため、ホッと一息休憩したいときに立ち寄るのもおすすめ。
 ---
 渋谷駅から少し離れた「奥渋エリア」に位置する瓦屋根が特徴的なカフェ。\
-プロが使用するコーヒー器具や豆を提供する「Beasty Coffee by amadana」の\
-コーヒーを実際に味わうことができる。\
-和の雰囲気が感じられる落ち着いた店内では、Wi-Fi、充電設備を完備しており、\
-ワークスペースとしての利用も可能。\
+プロが使用するコーヒー器具や豆を提供する「Beasty Coffee by amadana」のコーヒーを実際に味わうことができる。\
+和の雰囲気が感じられる落ち着いた店内では、Wi-Fi、充電設備を完備しており、ワークスペースとしての利用も可能。\
 代々木公園からも近いため、ホッと一息休憩したいときに立ち寄るのもおすすめ。
-
-
 
 ### 店舗情報
 
