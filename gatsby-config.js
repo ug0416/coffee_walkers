@@ -2,8 +2,8 @@ const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = {
   siteMetadata: {
-    title: 'Yellowcake',
-    siteUrl: 'https://yellowcake.netlify.com'
+    title: 'Coffee Walkers',
+    siteUrl: 'https://coffeewalkers.com/'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -12,15 +12,15 @@ module.exports = {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
         /*id: 'GTM-add_your_tag_here',*/
-        id: 'GTM-P4RNF8D',
+        id: 'GTM-NZX2NNW',
         includeInDevelopment: false
       }
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'yellowcake',
-        short_name: 'yellowcake',
+        name: 'Coffee Walkers',
+        short_name: 'CoffeeWalkers',
         start_url: '/',
         background_color: '#f84e39',
         theme_color: '#f84e39',
