@@ -68,7 +68,6 @@ export default class Gallery extends Component {
   render() {
     const { images } = this.props
     const properties = {
-      lazyLoad: true,
       showNav: false,
       showPlayButton: false,
       showFullscreenButton: false
