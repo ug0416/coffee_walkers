@@ -2,13 +2,13 @@ import React, { Fragment } from 'react'
 import _get from 'lodash/get'
 import { Link, graphql } from 'gatsby'
 import { ChevronLeft } from 'react-feather'
-
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import Gallery from '../components/Gallery'
-import './SinglePost.css'
 import { Tags } from '../components/Tags'
 import PostSection from '../components/PostSection'
+
+import './SinglePost.css'
 
 export const SinglePostTemplate = ({
   id,
