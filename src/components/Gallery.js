@@ -1,8 +1,7 @@
 import React, { Component, Fragment } from 'react'
+import ImageGallery from 'react-image-gallery'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import ImageGallery from 'react-image-gallery';
-
 import _kebabCase from 'lodash/kebabCase'
 
 import './Gallery.css'
@@ -68,6 +67,7 @@ export default class Gallery extends Component {
   render() {
     const { images } = this.props
     const properties = {
+      lazyLoad: true,
       showNav: false,
       showPlayButton: false,
       showFullscreenButton: false
