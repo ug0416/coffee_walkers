@@ -7,6 +7,7 @@ import Footer from './Footer'
 
 import 'modern-normalize/modern-normalize.css'
 import './globalStyles.css'
+import IframlyComponent from './IframlyComponent'
 
 export default ({ children, meta, title }) => {
   return (
@@ -51,6 +52,7 @@ export default ({ children, meta, title }) => {
 
         return (
           <Fragment>
+            <IframlyComponent />
             <Helmet
               defaultTitle={siteTitle}
               titleTemplate={`%s | ${siteTitle}`}
