@@ -10,9 +10,9 @@ class Form extends React.Component {
     name: 'Simple Form Ajax',
     subject: '', // optional subject of the notification email
     action: '',
-    successMessage: 'Thanks for your enquiry, we will get back to you soon',
+    successMessage: 'お問い合わせありがとうございます。確認次第、ご連絡いたします。',
     errorMessage:
-      'There is a problem, your message has not been sent, please try contacting us via email'
+      '問題が発生しました。メッセージが送信されていませんので、Eメールでお問い合わせください。'
   }
 
   state = {
@@ -66,7 +66,7 @@ class Form extends React.Component {
           name={name}
           action={action}
           onSubmit={this.handleSubmit}
-          data-netlify=""
+          data-netlify="true"
           netlify-recaptcha=""
         >
           {this.state.alert && (

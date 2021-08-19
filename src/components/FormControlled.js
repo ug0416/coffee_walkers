@@ -77,7 +77,7 @@ class Form extends Component {
       })
       .then(
         this.resetForm({
-          alert: 'Thanks for your enquiry, we will get back to you soon.'
+          alert: 'お問い合わせありがとうございます。確認次第、ご連絡いたします。'
         })
       )
       .catch(err => {
@@ -85,7 +85,7 @@ class Form extends Component {
         this.setState({
           disabled: false,
           alert:
-            '❗️ There is a problem, your message has not been sent, please try contacting us via email'
+            '❗️ 問題が発生しました。メッセージが送信されていませんので、Eメールでお問い合わせください。'
         })
       })
   }
