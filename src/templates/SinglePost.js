@@ -16,8 +16,6 @@ export const SinglePostTemplate = ({
   postTags,
   date,
   body,
-  nextPostURL,
-  prevPostURL,
   categories = [],
   relatedPosts,
   gallery
@@ -81,24 +79,6 @@ export const SinglePostTemplate = ({
             <Content source={body} />
           </div>
 
-          <div className="SinglePost--Pagination">
-            {prevPostURL && (
-              <Link
-                className="SinglePost--Pagination--Link prev"
-                to={prevPostURL}
-              >
-                前へ
-              </Link>
-            )}
-            {nextPostURL && (
-              <Link
-                className="SinglePost--Pagination--Link next"
-                to={nextPostURL}
-              >
-                次へ
-              </Link>
-            )}
-          </div>
           {postTags &&
             <Tags tags={postTags} selectedTag={null} />
           }
