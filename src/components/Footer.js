@@ -47,12 +47,16 @@ const Footer = class extends React.Component {
                 </a>
               </div>
               <ul className="terms">
+                <li>
                 <Link to="/privacy-policy/">
-                <li>プライバシーポリシー</li>
+                  プライバシーポリシー
                 </Link>
+                </li>
+                <li>
                 <Link to="/law/">
-                <li>特定商取引法に基づく表示</li>  
+                  特定商取引法に基づく表示
                 </Link> 
+                </li>  
               </ul>
               <div className="container taCenter">
                 <span>
