@@ -54,6 +54,9 @@ export default ({ children, meta, title }) => {
           <Fragment>
             <IframlyComponent />
             <Helmet
+              htmlAttributes={{
+                lang: 'ja',
+            }}
               defaultTitle={siteTitle}
               titleTemplate={`%s | ${siteTitle}`}
             >
