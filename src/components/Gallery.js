@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react'
 import ImageGallery from 'react-image-gallery'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import _kebabCase from 'lodash/kebabCase'
 
 import './Gallery.css'
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -26,7 +25,6 @@ export default class Gallery extends Component {
     index: 0
   }
 
-
   getImageInfo = (img, index) =>
     fetch(img.image + '-/json/')
       .then(res => res.json())
@@ -36,9 +34,8 @@ export default class Gallery extends Component {
           newImagesArr[index] = {
             original: img.image,
             originalAlt: img.title,
-            thumbnailAlt: img.title,
             thumbnail: img.image,
-            originalClass: ""
+            thumbnailAlt: img.title
           }
           this.setState({
             sliderImages: newImagesArr
@@ -65,7 +62,6 @@ export default class Gallery extends Component {
   }
 
   render() {
-    const { images } = this.props
     const properties = {
       lazyLoad: true,
       showNav: false,
@@ -74,24 +70,12 @@ export default class Gallery extends Component {
     }
     return (
       <Fragment>
-        {images && images.length > 0 && (
           <div className="Gallery">
-            {images.map((image, index) => (
-              <div
-                className="Gallery--Item"
-                key={_kebabCase(image.alt) + '-' + index}
-              >
-                
-              </div>
-            ))}
-          </div>
-        )}
-        {this.state.loaded && this.state.sliderImages.length > 0 && (
           <ImageGallery
             items={this.state.sliderImages}
             {...properties}
           />
-        )}
+          </div>
       </Fragment>
     )
   }
