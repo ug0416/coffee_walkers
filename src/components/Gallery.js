@@ -35,10 +35,10 @@ export default class Gallery extends Component {
           const newImagesArr = [...this.state.sliderImages]
           newImagesArr[index] = {
             original: img.image,
+            originalAlt: img.title,
+            thumbnailAlt: img.title,
             thumbnail: img.image,
-            title: img.title,
-            w: result.width,
-            h: result.height
+            originalClass: ""
           }
           this.setState({
             sliderImages: newImagesArr
