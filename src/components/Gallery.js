@@ -3,8 +3,7 @@ import ImageGallery from 'react-image-gallery'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import './Gallery.css'
-import "react-image-gallery/styles/css/image-gallery.css";
+import 'react-image-gallery/styles/css/image-gallery.css'
 
 export const query = graphql`
   fragment Gallery on MarkdownRemark {
