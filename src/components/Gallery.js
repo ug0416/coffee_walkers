@@ -69,7 +69,7 @@ export default class Gallery extends Component {
     }
     return (
       <Fragment>
-          <div className="Gallery">
+          <div>
           <ImageGallery
             items={this.state.sliderImages}
             {...properties}
