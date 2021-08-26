@@ -62,7 +62,7 @@ Coffee Walkerには嬉しい、リーズナブルな価格でコーヒーをい�
 
 ### 営業時間
 
-<dl id="op_h">\
+<dl id="op_h">
 <dt>MONDAY</dt>
 <dd>8:30AM – 7:00PM</dd>
 <dt>TUESDAY</dt>
@@ -76,7 +76,8 @@ Coffee Walkerには嬉しい、リーズナブルな価格でコーヒーをい�
 <dt>SATURDAY</dt>
 <dd>11:00AM – 5:00PM</dd>
 <dt>SUNDAY</dt>
-<dd>11:00AM – 5:00PM</dd>\
+<dd>11:00AM – 5:00PM</dd>
 </dl>
+
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12958.302860801725!2d139.7828856!3d35.7120572!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x536a146dbfe01d1b!2z6Ieq5a6254SZ54WOIOeou-iNt-eUuuePiOeQsg!5e0!3m2!1sja!2sjp!4v1595865209671!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
