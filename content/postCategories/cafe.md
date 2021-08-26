@@ -3,7 +3,7 @@ template: BlogIndex
 title: Cafe
 subtitle: カフェ,喫茶店
 slug: cafe
-featuredImage: https://ucarecdn.com/4a879041-7c7d-4fa2-a4ab-d9357211a105/
+featuredImage: https://ucarecdn.com/775f5bc1-4eda-4ede-b44d-8844185dd5e3/-/crop/1074x654/0,0/-/preview/
 meta:
   title: Cafe（カフェ）
   description: カフェ、喫茶店
