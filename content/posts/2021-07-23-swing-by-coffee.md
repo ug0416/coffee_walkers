@@ -37,7 +37,6 @@ meta:
 ### 店舗情報
 
 <dl id="info">
-
 <dt>決済</dt>
 <dd>現金</dd>
 <dt>テーブル</dt>
@@ -54,7 +53,6 @@ meta:
 ### 営業時間
 
 <dl id="op_h">
-
 <dt>MONDAY</dt>
 <dd>10:00AM – 7:00PM</dd>
 <dt>TUESDAY</dt>
