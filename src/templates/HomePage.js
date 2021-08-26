@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import { Location } from '@reach/router'
 import qs from 'qs'
 
-import HomePageHeader from '../components/HomePageHeader'
 import PostSection from '../components/PostSection'
 import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
@@ -67,11 +66,6 @@ export const HomePageTemplate = ({
 
       return (
         <main className="Blog">
-          <HomePageHeader
-            title={title}
-            subtitle={subtitle}
-            backgroundImage={featuredImage}
-          />
 
           {!!postCategories.length && (
             <section className="section thin">
