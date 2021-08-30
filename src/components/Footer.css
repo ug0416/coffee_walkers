@@ -17,8 +17,7 @@ footer.footer {
 .taCenter {
   text-align: center;
   padding: 2rem 0;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .has-text-white-ter {
@@ -52,6 +51,6 @@ footer.footer {
 .terms li{
   display: inline-block;
   margin: .5em;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
