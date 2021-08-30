@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react'
 import ImageGallery from 'react-image-gallery'
-import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import 'react-image-gallery/styles/css/image-gallery.css'
@@ -70,16 +69,15 @@ export default class Gallery extends Component {
     return (
       <Fragment>
           <div>
+          {this.state.loaded &&
+          this.state.sliderImages.length > 0 && (
           <ImageGallery
             items={this.state.sliderImages}
             {...properties}
           />
+          )}
           </div>
       </Fragment>
     )
   }
-}
-
-Gallery.propTypes = {
-  images: PropTypes.array.isRequired
 }
