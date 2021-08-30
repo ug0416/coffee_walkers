@@ -7,7 +7,7 @@ date: 2021-07-23
 featuredImage: https://ucarecdn.com/7f9d425c-c385-4e9c-a694-2230adccc267/
 excerpt: <--
 tags:
-  - 東京都
+  - 東京
   - 下北沢
 categories:
   - category: ToGo

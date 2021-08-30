@@ -7,8 +7,9 @@ date: 2021-08-26
 featuredImage: https://ucarecdn.com/9d4af845-2d3b-462a-a687-07ba482c1237/
 excerpt: <--
 tags:
-  - 東京都
+  - 東京
   - 渋谷
+  - 原宿
 categories:
   - category: Cafe
   - category: Work

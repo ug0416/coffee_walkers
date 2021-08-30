@@ -7,7 +7,7 @@ date: 2021-07-23
 featuredImage: https://ucarecdn.com/3b50715a-2d5e-4612-8ee1-367b10c2f7e6/
 excerpt: <--
 tags:
-  - 東京都
+  - 東京
   - 代々木公園
 categories:
   - category: Cafe

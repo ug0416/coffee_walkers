@@ -7,7 +7,7 @@ date: 2021-07-23
 featuredImage: https://ucarecdn.com/e9da8bf9-b465-4d88-b3ba-6d5972a12d5d/
 excerpt: <--
 tags:
-  - 東京都
+  - 東京
   - 上野
   - 浅草
 categories:

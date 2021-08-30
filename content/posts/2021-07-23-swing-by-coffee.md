@@ -7,7 +7,7 @@ date: 2021-07-23
 featuredImage: https://ucarecdn.com/8d2217df-085a-4a24-a9d8-c264f0f19c9d/
 excerpt: <--
 tags:
-  - 東京都
+  - 東京
   - 神楽坂
 categories:
   - category: ToGo

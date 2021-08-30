@@ -18,7 +18,7 @@
 .PostCard--Image {
   margin: 0 0 2rem 0;
   width: 100%;
-  height: 15rem;
+  height: 20rem;
 }
 
 .PostCard--Title {
@@ -35,3 +35,15 @@
   line-height: 1;
   margin: 0.5em 0;
 }
+
+.PostCard--Tags {
+  position: absolute;
+  top: 0;/*画像の左上に配置*/
+  left: 0;
+  margin: 0; /*余計な隙間を除く*/
+  color: white;/*文字を白に*/
+  background:rgba(63,63,63,0.6);
+  font-size: 15px;
+  line-height: 1;/*行高は1に*/
+  padding: 5px 10px;/*文字周りの余白*/
+  }

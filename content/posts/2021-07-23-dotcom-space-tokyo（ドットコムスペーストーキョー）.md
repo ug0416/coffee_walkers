@@ -7,7 +7,7 @@ date: 2021-07-23
 featuredImage: https://ucarecdn.com/8875094e-facd-4067-a1b6-9d770892be2f/
 excerpt: <--
 tags:
-  - 東京都
+  - 東京
   - 原宿
 categories:
   - category: Cafe

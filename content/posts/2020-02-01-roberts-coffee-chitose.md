@@ -7,7 +7,7 @@ date: 2021-07-23
 featuredImage: https://ucarecdn.com/c14a54e3-fb20-4bc1-a357-1978f8b98993/
 excerpt: <--
 tags:
-  - 東京都
+  - 東京
   - 千歳烏山
 categories:
   - category: Cafe
