@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import ImageGallery from 'react-image-gallery'
 import { graphql } from 'gatsby'
 
-import 'react-image-gallery/styles/css/image-gallery.css'
+import 'react-image-gallery/styles/scss/image-gallery.scss'
 
 export const query = graphql`
   fragment Gallery on MarkdownRemark {
@@ -68,7 +68,6 @@ export default class Gallery extends Component {
     }
     return (
       <Fragment>
-          <div>
           {this.state.loaded &&
           this.state.sliderImages.length > 0 && (
           <ImageGallery
@@ -76,7 +75,6 @@ export default class Gallery extends Component {
             {...properties}
           />
           )}
-          </div>
       </Fragment>
     )
   }
