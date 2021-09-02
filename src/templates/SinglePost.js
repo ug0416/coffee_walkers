@@ -149,6 +149,11 @@ export const pageQuery = graphql`
         subtitle
         date(formatString: "YYYY/MM/DD")
         featuredImage
+        gallery {
+          alt
+          image
+          title
+        }
         categories {
           category
         }
