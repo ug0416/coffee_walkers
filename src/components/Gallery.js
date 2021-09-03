@@ -1,8 +1,12 @@
 import React, { Component, Fragment } from 'react'
-import ImageGallery from 'react-image-gallery'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Image from './Image'
+import { Carousel } from 'react-responsive-carousel';
+import _kebabCase from 'lodash/kebabCase'
 
-import 'react-image-gallery/styles/scss/image-gallery.scss'
+import './Gallery.css'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export const query = graphql`
   fragment Gallery on MarkdownRemark {
@@ -30,10 +34,10 @@ export default class Gallery extends Component {
         result => {
           const newImagesArr = [...this.state.sliderImages]
           newImagesArr[index] = {
-            original: img.image,
-            originalAlt: img.title,
-            thumbnail: img.image,
-            thumbnailAlt: img.title
+            src: img.image,
+            title: img.title,
+            w: result.width,
+            h: result.height
           }
           this.setState({
             sliderImages: newImagesArr
@@ -60,21 +64,38 @@ export default class Gallery extends Component {
   }
 
   render() {
-    const properties = {
-      showNav: false,
-      showPlayButton: false,
-      showFullscreenButton: false
-    }
+    const { images } = this.props
     return (
       <Fragment>
-          {this.state.loaded &&
-          this.state.sliderImages.length > 0 && (
-          <ImageGallery
-            items={this.state.sliderImages}
-            {...properties}
-          />
-          )}
+        {images && images.length > 0 && (
+          <Carousel
+          showThumbs={false}
+          showStatus={false}
+          >
+            {images.map((image, index) => (
+              <div
+                className="Gallery--Item"
+                key={_kebabCase(image.alt) + '-' + index}
+                tabIndex={0}
+                aria-label="Toggle Gallery"
+                role="button"
+              >
+                <div>
+                  <Image
+                    resolutions="small"
+                    src={image.image}
+                    alt={image.alt}
+                  />
+                </div>
+              </div>
+            ))}
+          </Carousel>
+        )}
       </Fragment>
     )
   }
+}
+
+Gallery.propTypes = {
+  images: PropTypes.array.isRequired
 }

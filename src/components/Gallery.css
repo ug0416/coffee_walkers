@@ -1,24 +1,7 @@
-.Gallery {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 750px) {
-  .Gallery {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-
 .Gallery--Item {
   position: relative;
   display: flex;
-  flex-direction: column;
-  width: calc(100% / 3 - 5rem);
+  width: 100%;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -33,8 +16,24 @@
 
 .Gallery--Item > div {
   position: relative;
-  width: 100%;
-  height: 25rem;
+  width: 100vw;
+  height: 80vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .Gallery--Item > div {
+    position: relative;
+    width: 100%;
+    height: 50rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Gallery--Item > div {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+  }
 }
 
 .Gallery--Item figcaption {
